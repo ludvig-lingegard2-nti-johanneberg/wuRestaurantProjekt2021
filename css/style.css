@@ -1,4 +1,57 @@
+*{
+    margin: 0%;
+}
+
 .img {
     width: 20%;
     height: 20%;
 }
+
+.body{
+    display: grid;
+    grid-template-areas: 
+    'he .. he' 
+    's1 s1 s1'
+    's2 s2 s2'
+    'fo fo fo'
+    ;
+    grid-template-columns: 10% 15% 75%;
+    grid-template-rows: 10% 45% 40% 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.section1 {
+    display: grid;
+    grid-template-areas: 
+    'img art';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-area: s1;
+}
+
+.section2 {
+    display: grid;
+    grid-template-areas: 
+    'img img img'
+    'art art art'
+    ;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 100%;
+    grid-area: s2;
+}
+
+.header{
+    grid-area: he;
+    background-color: brown;
+}
+
+.footer{
+    grid-area: fo;
+    background-color: chartreuse;
+}
+
+.nothing{
+    grid-area: ..;
+}
+
