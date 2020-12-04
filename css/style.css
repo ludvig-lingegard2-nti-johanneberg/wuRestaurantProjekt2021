@@ -7,51 +7,129 @@
     height: 20%;
 }
 
-.body{
+#wrapper1{
     display: grid;
     grid-template-areas: 
-    'he .. he' 
+    'he he he' 
     's1 s1 s1'
     's2 s2 s2'
-    'fo fo fo'
-    ;
+    'fo fo fo';
     grid-template-columns: 10% 15% 75%;
     grid-template-rows: 10% 45% 40% 5%;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
 }
 
 .section1 {
     display: grid;
-    grid-template-areas: 
-    'img art';
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
     grid-area: s1;
+    background-color: blue;
 }
 
 .section2 {
     display: grid;
-    grid-template-areas: 
-    'img img img'
-    'art art art'
-    ;
     grid-template-columns: 33% 34% 33%;
     grid-template-rows: 100%;
     grid-area: s2;
+    background-color: chocolate;
 }
 
 .header{
     grid-area: he;
-    background-color: brown;
+    display: grid;
+    grid-template-columns: 10% 25% 65%;
+    grid-template-rows: 100%;
+    background-color: white;
+}
+
+.nothing {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    background-color:white;
 }
 
 .footer{
     grid-area: fo;
-    background-color: chartreuse;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
 }
 
-.nothing{
-    grid-area: ..;
+.article1 {
+    background-color: chocolate;
+}
+
+.article2 {
+    background-color: cornflowerblue;
+}
+
+.article3 {
+    background-color: crimson;
+}
+
+.article4 {
+    background-color: darkgoldenrod;
+}
+
+#wrapper2 {
+    display: grid;
+    grid-template-columns: 10% 15% 75%;
+    grid-template-rows: 10% 40% 45% 5%;
+    grid-template-areas: 
+    'he he he'
+    'sp sp sp'
+    'sb sb sb'
+    'fo fo fo'
+    ;
+    height: 100vh;
+}
+
+.sectionpicture {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 70%;
+    grid-area: sp;
+    background-color: brown;
+    grid-gap: 15px;
+}
+
+.sectionbookings {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    background-color: cadetblue;
+    grid-area: sb;
+}
+
+.article5 {
+    background-color: grey;
+}
+
+.article6{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.articlepicture {
+    display: flex;
+    justify-content: center;
+    height: 94%;
 }
 
