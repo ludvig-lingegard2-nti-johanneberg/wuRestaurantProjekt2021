@@ -15,13 +15,13 @@
     's2 s2 s2'
     'fo fo fo';
     grid-template-columns: 10% 15% 75%;
-    grid-template-rows: 10% 45% 40% 5%;
-    height: 100vh;
+    grid-template-rows: 8% 37% 50% 5%;
+    height: 130vh;
 }
 
 .section1 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 67%;
     grid-template-rows: 100%;
     grid-area: s1;
     background-color: blue;
@@ -30,9 +30,23 @@
 .section2 {
     display: grid;
     grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 100%;
+    grid-template-rows: 65% 35%;
     grid-area: s2;
-    background-color: chocolate;
+}
+
+.section2 img {
+    align-self: center;
+    justify-self: center;
+    height: 225px;
+    width: 225px;
+}
+
+.section2 article {
+    align-self: center;
+    justify-self: center;
+    height: 110px;
+    width: 225px;
+    background-color: grey;
 }
 
 .header{
@@ -70,21 +84,12 @@ a:hover {
     justify-content: space-around;
 }
 
+
+
 .article1 {
     background-color: chocolate;
 }
 
-.article2 {
-    background-color: cornflowerblue;
-}
-
-.article3 {
-    background-color: crimson;
-}
-
-.article4 {
-    background-color: darkgoldenrod;
-}
 
 #wrapper2 {
     display: grid;
@@ -133,3 +138,31 @@ a:hover {
     height: 94%;
 }
 
+.wrapper3 {
+    display: grid;
+    grid-template-columns: 10% 15% 75%;
+    grid-template-rows: 10% 85% 5%;
+    height: 100vh;
+    grid-template-areas: 
+    'he he he'
+    's3 s3 s3'
+    'fo fo fo'
+    ;
+}
+
+.section3 {
+    grid-area: s3;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.section3 img {
+    align-self: center;
+    justify-self: center;
+    background-color: burlywood;
+}
+
+.section3 article {
+    background-color: chocolate;
+}
