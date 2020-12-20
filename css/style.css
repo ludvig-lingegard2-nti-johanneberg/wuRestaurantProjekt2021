@@ -17,15 +17,30 @@
     grid-template-columns: 10% 15% 75%;
     grid-template-rows: 8% 37% 50% 5%;
     height: 130vh;
+    width: 92.4vw;
+    grid-gap: 20px;
+    background-color: orange;
 }
 
 .section1 {
     display: grid;
-    grid-template-columns: 33% 67%;
+    grid-template-columns: 33% 34% 33%;
     grid-template-rows: 100%;
     grid-area: s1;
-    background-color: blue;
+    grid-gap: 20px;
 }
+
+.section1 img {
+    height: 294px;
+    width: 420px;
+    align-self: center;
+    justify-self: center;
+}
+
+.section1 article {
+    background-color: darkorange;
+}
+
 
 .section2 {
     display: grid;
@@ -46,7 +61,7 @@
     justify-self: center;
     height: 110px;
     width: 225px;
-    background-color: grey;
+    background-color: darkorange;
 }
 
 .header{
@@ -54,11 +69,12 @@
     display: grid;
     grid-template-columns: 10% 25% 65%;
     grid-template-rows: 100%;
-    background-color: white;
 }
 
-.nothing {
-    background-color: white;
+.header img{
+    height: 80px;
+    width: 80px;
+    justify-self: center;
 }
 
 a {
@@ -74,7 +90,6 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-self: center;
-    background-color:white;
 }
 
 .footer{
@@ -82,12 +97,6 @@ a:hover {
     display: flex;
     align-self: center;
     justify-content: space-around;
-}
-
-
-
-.article1 {
-    background-color: chocolate;
 }
 
 
@@ -101,7 +110,9 @@ a:hover {
     'sb sb sb'
     'fo fo fo'
     ;
-    height: 100vh;
+    height: 130vh;
+    width: 97vw;
+    background-color: orange;
 }
 
 .sectionpicture {
@@ -109,8 +120,18 @@ a:hover {
     grid-template-rows: 100%;
     grid-template-columns: 30% 70%;
     grid-area: sp;
-    background-color: brown;
     grid-gap: 15px;
+}
+
+.sectionpicture img{
+    justify-self: center;
+    align-self: center;
+    height: 315px;
+    width: 370px;
+}
+
+.sectionpicture article{
+    background-color: darkorange;
 }
 
 .sectionbookings {
@@ -118,24 +139,24 @@ a:hover {
     grid-template-rows: 40% 60%;
     grid-template-columns: 100%;
     grid-gap: 10px;
-    background-color: cadetblue;
     grid-area: sb;
 }
 
-.article5 {
-    background-color: grey;
+.sectionbookings article {
+    background-color: darkorange;
+    padding: 47px;
 }
+
+.sectionbookings img {
+    align-self: center;
+    justify-self: center;
+}
+
 
 .article6{
     display: flex;
     justify-content: space-around;
     align-self: center;
-}
-
-.articlepicture {
-    display: flex;
-    justify-content: center;
-    height: 94%;
 }
 
 .wrapper3 {
@@ -148,6 +169,8 @@ a:hover {
     's3 s3 s3'
     'fo fo fo'
     ;
+    width: 98vw;
+    background-color: orange;
 }
 
 .section3 {
@@ -155,14 +178,13 @@ a:hover {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 50% 50%;
+    grid-gap: 20px;
 }
 
 .section3 img {
     align-self: center;
     justify-self: center;
     background-color: burlywood;
-}
-
-.section3 article {
-    background-color: chocolate;
+    width: 640px;
+    height: 450px;
 }
